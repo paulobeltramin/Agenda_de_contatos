@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/agenda.png" type="image/x-icon">
+    <!-- google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;600;900&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JS -->
+    <script src="index.js" defer></script>
+
+    <title>Agenda de contatos</title>
+
+</head>
+
+<body>
+    <!-- cabeçalho -->
+    <header class="container_header">
+        <img src="/images/agenda.png" alt="icone-agenda">
+        <h2>Minha agenda de contatos</h2>
+    </header>
+
+    <!-- formularios -->
+    <section class="container_form">
+        <form id="formulario">
+            <label>Nome:</label>
+            <input type="text" required placeholder="digite o nome do contato *" id="nomeContato">
+
+            <label>Numero do contato:</label>
+            <input type="tel" id="telefone1" required placeholder="numero principal * ">
+
+            <label>Numero adicional:</label>
+            <input type="tel" id="telefone2" placeholder="( OPCIONAL )">
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+    <!-- tabela -->
+    <section class="container_table">
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone de contato 1</th>
+                    <th>telefone de contato 2</th>
+                </tr>
+            </thead>
+
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+
+        <p class="message">Não há contatos cadastrados </p>
+        
+    </section>
+
+</body>
+
+</html>
